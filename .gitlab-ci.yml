@@ -1,0 +1,18 @@
+qa1:
+  stage: test
+  script:
+    - /data/ci-script/youfenba/k8s_rsync_node.sh
+  only:
+    - develop
+  tags:
+    - shell-public
+
+发布生产:
+  stage: build
+  script:
+    - /data/ci-script/youfenba/k8s_rsync_node.sh
+  only:
+    - master
+  when: manual
+  tags:
+    - shell-public

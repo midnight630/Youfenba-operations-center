@@ -1,0 +1,75 @@
+@import '../../var.less';
+
+.dashboard_container {
+  box-sizing: border-box;
+  width: 100%;
+  padding:0 20px;
+  margin:20px 0;
+  .pb20 {
+    padding-bottom: 20px;
+  }
+  .pt20 {
+    padding-top: 20px;
+  }
+  .pt10 {
+    padding-top: 10px;
+  }
+  .pl10 {
+    padding-left: 10px;
+  }
+  .pr10 {
+    padding-right: 10px;
+  }
+
+  .mr10 {
+    margin-right: 10px;
+  }
+  .ml10 {
+    margin-left: 10px;
+  }
+  .fileds{
+    margin-bottom: 15px;
+  }
+  .sider{
+    .tit{
+      font-size: 14px;
+      color:#909090;
+      margin:15px 0;
+      &:first-child{
+        margin-top: 0px;
+      }
+    }
+    .list{
+      margin:0px;
+      padding:0px;
+      li{
+        padding-left:10px;
+        height: 36px;
+        line-height: 36px;
+        color:#333;
+        &.active{
+          color:@primary-color;
+          background-color: @active-bg;
+        }
+      }
+    }
+  }
+  .content{
+    .operate-r{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .table-operate{
+      color:@primary-color;
+      cursor:pointer;
+    }
+  }
+  
+  .ant-advanced-search-form .ant-form-item {
+    display: flex;
+  }
+  
+  .ant-advanced-search-form .ant-form-item-control-wrapper {
+    flex: 1;
+  }
+}

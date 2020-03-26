@@ -1,0 +1,87 @@
+.hmm_multiple_date {
+  position: relative;
+
+  .hmm_multiple_date_input_warp {
+    position: relative;
+    display: inline-block;
+    &:hover {
+      .anticon-close-circle {
+        display: inline-block !important;
+      }
+    }
+    .anticon-close-circle {
+      &:hover {
+        color: rgba(0, 0, 0, 0.45) !important;
+      }
+    }
+    .ant-calendar-footer-btn {
+      & > .ant-calendar-time-picker-btn,
+      & > .ant-calendar-ok-btn {
+        display: none;
+      }
+    }
+  }
+}
+
+.hmm_multiple_date_picker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  .ant-calendar-picker-input {
+    display: none;
+  }
+  .ant-calendar-picker-icon {
+    display: none;
+  }
+}
+
+.hmm_multiple_date_picker_dropdown {
+  .ant-calendar-input-wrap {
+    display: none;
+  }
+
+  @color1: rgba(0, 0, 0, 0.65);
+  @color2: rgba(0, 0, 0, 0.25);
+
+  @hoverColor: #d8e6e1;
+  .ant-calendar-cell {
+    .ant-calendar-date {
+      background: none;
+      color: @color1;
+
+      &:hover {
+        background: @hoverColor;
+      }
+    }
+
+    &.ant-calendar-next-month-btn-day,
+    &.ant-calendar-last-month-cell {
+      .ant-calendar-date {
+        color: @color2;
+      }
+      .ant-calendar-date.nmmc_calendar-select-day {
+        background: @hoverColor;
+      }
+    }
+  }
+
+  .ant-calendar-today .ant-calendar-date {
+    border: 1px solid @primary-color;
+    color: @primary-color;
+  }
+
+  .ant-calendar-cell .nmmc_calendar-select-day.ant-calendar-date {
+    background: @primary-color;
+    color: #fff;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 38px;
+    align-items: center;
+    button + button {
+      margin-left: 10px;
+    }
+  }
+}

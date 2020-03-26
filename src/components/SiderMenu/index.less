@@ -1,0 +1,50 @@
+@import '../var.less';
+
+@siderW: 60px;
+.@{class-prefix}_sider_menu {
+  //   width: 95px;
+  //   padding-right: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: ~'calc(100vh - @{headerH})';
+
+  .sider_menu-item {
+    height: 65px;
+    width: @siderW;
+    &.selelct {
+      background-color: @primary-color;
+    }
+
+    & > a {
+      display: block;
+      padding: 10px 0;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      display: block;
+      text-align: center;
+      position: relative;
+
+      i.dot {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: red;
+      }
+
+      i.anticon {
+        margin-bottom: 6px;
+        font-size: 20px;
+      }
+
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '../../var.less';
+.@{class-prefix}_header-user {
+  &-pointer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .user {
+      display: flex;
+      align-items: center;
+      @faceH: 35px;
+      .face {
+        width: @faceH;
+        height: @faceH;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      .nick-name {
+        margin-right: 5px;
+        max-width: 80px;
+        height: @faceH;
+        line-height: @faceH;
+        overflow: hidden;
+      }
+    }
+
+    .anticon-down {
+      font-size: 16px;
+    }
+  }
+}

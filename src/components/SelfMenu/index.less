@@ -1,0 +1,38 @@
+@import '../../theme/index.less';
+
+.@{class-prefix}-components-selfmenu {
+    &-content {
+        &-item {
+            text-align : left;
+            height     : 40px;
+            line-height: 40px;
+            color      : #666;
+            font-weight: 400;
+            padding    : 0 40px 0 20px;
+            cursor     : pointer;
+            position   : relative;
+        }
+
+        .active {
+            color        : #0391fb;
+            border-top   : 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+
+        a:nth-of-type(1) {
+            .@{class-prefix}-components-selfmenu-content-item{
+                border-top: 0;
+            }
+        }
+
+        .active:after {
+            content         : '';
+            position        : absolute;
+            top             : 0;
+            right           : -1px;
+            bottom          : 0;
+            width           : 1px;
+            background-color: #fff;
+        }
+    }
+}

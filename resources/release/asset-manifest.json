@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "//st-q.mxcdn.cn/yfb_op_portal_new/static/css/main.2168bf9b.chunk.css",
+    "main.js": "//st-q.mxcdn.cn/yfb_op_portal_new/static/js/main.2cd8c4b6.chunk.js",
+    "runtime-main.js": "//st-q.mxcdn.cn/yfb_op_portal_new/static/js/runtime-main.9a3119c0.js",
+    "static/css/2.3a7221b9.chunk.css": "//st-q.mxcdn.cn/yfb_op_portal_new/static/css/2.3a7221b9.chunk.css",
+    "static/js/2.ee3f4be2.chunk.js": "//st-q.mxcdn.cn/yfb_op_portal_new/static/js/2.ee3f4be2.chunk.js",
+    "precache-manifest.32deec6ca0e0a39b4f6581b929a338c6.js": "//st-q.mxcdn.cn/yfb_op_portal_new/precache-manifest.32deec6ca0e0a39b4f6581b929a338c6.js",
+    "release_index.ejs": "//st-q.mxcdn.cn/yfb_op_portal_new/release_index.ejs",
+    "service-worker.js": "//st-q.mxcdn.cn/yfb_op_portal_new/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a3119c0.js",
+    "static/css/2.3a7221b9.chunk.css",
+    "static/js/2.ee3f4be2.chunk.js",
+    "static/css/main.2168bf9b.chunk.css",
+    "static/js/main.2cd8c4b6.chunk.js"
+  ]
+}

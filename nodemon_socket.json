@@ -1,0 +1,22 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "public/*",
+    "README.md",
+    "src/**/*",
+    "_download",
+    ".gitignore"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node --harmony"
+  },
+  "watch": ["server/socket/**/*.js"],
+  "env": {
+    "NODE_ENV": "development",
+    "DEBUG": "*,-nodemon:*,-nodemon,-knex:pool"
+  },
+  "ext": "ts js"
+}
